@@ -1,0 +1,14 @@
+services:
+  operatingsystem:
+    image: redhat/ubi9
+    container_name: redhat9
+    tty: true
+    stdin_open: true
+    restart: always
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    tty: true
+    stdin_open: true
+    restart: always
